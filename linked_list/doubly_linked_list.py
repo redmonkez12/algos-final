@@ -83,6 +83,9 @@ class DoublyLinkedList:
         if node == self.tail:
             self.tail = node.prev
 
+        node.next = None
+        node.prev = None
+
         return node.value
 
     def get_at(self, index: int) -> None | Node:

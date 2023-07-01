@@ -37,6 +37,7 @@ root.right.right = Node(15)
 #
 #     return path
 
+# [5, 23, 4, 7, 21, 8, 15]
 # in order - leva cast, koren a prava cast
 # def walk(curr, path):
 #     if curr is None:
@@ -50,6 +51,7 @@ root.right.right = Node(15)
 #
 #     return path
 
+# [5, 4, 23, 21, 15, 8, 7]
 # post order - leva cast, prava a koren
 # def walk(curr, path):
 #     if curr is None:
@@ -60,5 +62,8 @@ root.right.right = Node(15)
 #     walk(curr.right, path)  # curr.right = Non
 #
 #     path.append(curr.value) # 5
-#
-#     return path
+
+    # return path
+
+# result = walk(root, [])
+# print(result)
