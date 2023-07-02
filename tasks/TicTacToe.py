@@ -37,6 +37,8 @@ class TicTacToe:
 
         return False
 
+    # self.grid = [[" " for _ in range(3)] for _ in range(3)]
+
     def print_board(self):
         for row in self.grid:
             print('|', end='')
