@@ -1,4 +1,6 @@
 class MinHeap:
+    pass
+class MinHeap:
     def __init__(self):
         self.heap = []
 

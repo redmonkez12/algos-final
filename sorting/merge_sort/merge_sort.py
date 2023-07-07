@@ -28,4 +28,3 @@ def merge_sort(array: list[int]) -> None:
             array[k] = right_arr[j]
             j += 1
             k += 1
-

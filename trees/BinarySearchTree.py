@@ -39,6 +39,7 @@ class BSTree:
                     return node
                 else:
                     current = current.right
+
     def search(self, val):
         if self.root is None:
             return None
