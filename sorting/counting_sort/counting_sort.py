@@ -32,18 +32,30 @@ def counting_sort(array: list[int]) -> None:
     for num in array:
         count[num] += 1
 
-    size = len(count)
+    # size = len(count)
+    size = max_value + 1
     output = [0] * len(array)
+
+    print(count)
 
     for i in range(1, size):
         count[i] += count[i - 1]
 
-    i = len(array) - 1
-    while i >= 0:
+    print(count)
+
+    # i = len(array) - 1
+    # while i >= 0:
+    #     current = count[array[i]] - 1
+    #     output[current] = array[i]
+    #     count[array[i]] -= 1
+    #     i -= 1
+
+    i = 0
+    while i < len(array):
         current = count[array[i]] - 1
         output[current] = array[i]
         count[array[i]] -= 1
-        i -= 1
+        i += 1
 
     for i in range(0, len(array)):
         array[i] = output[i]
@@ -52,4 +64,4 @@ def counting_sort(array: list[int]) -> None:
 array = [4, 2, 2, 8, 3, 3, 1]
 
 counting_sort(array)
-print(array) # [1, 2, 2, 3, 3, 4, 8]
+print(array)  # [1, 2, 2, 3, 3, 4, 8]
