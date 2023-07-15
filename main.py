@@ -1,14 +1,13 @@
-import heapq
+joe_1 = {
+    "name": "joe"
+}
 
-heap = []
+joe_2 = {
+    "name": "joe"
+}
 
-nums = [5, 2, 3, 6, 8, 7, 1]
+print(joe_1 is joe_2)  # False
+print(joe_1 == joe_2)  # True
 
-for num in nums:
-    heapq.heappush(heap, num)
 
-print(heap)
-heapq.heappop(heap)
-print(heap)
-heapq.heappop(heap)
-print(heap)
+
